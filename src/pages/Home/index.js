@@ -68,7 +68,7 @@ export default function Home({ route, navigation }) {
           {stores.length > 0 &&
             stores.map((store) => {
               return (
-                <View style={styles.empresaBox}>
+                <View key={store.id} style={styles.empresaBox}>
                   <Text style={styles.empresaTitle}>{store.nome}</Text>
                   <View style={styles.moeda}>
                     <Text style={styles.empresaPontos}>
